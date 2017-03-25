@@ -1,0 +1,10 @@
+this is the page loaded
+<div *ngIf="page">
+    
+  <h1></h1>
+{{ this.page.title.rendered  }}
+    {{ this.page.content.rendered  }}
+</div>
+<div *ngIf="!page">
+  no pages found
+</div>

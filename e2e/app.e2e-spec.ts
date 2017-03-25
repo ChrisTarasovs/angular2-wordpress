@@ -1,10 +1,10 @@
-import { UxPage } from './app.po';
+import { Wpng2Page } from './app.po';
 
-describe('ux App', () => {
-  let page: UxPage;
+describe('wpng2 App', function() {
+  let page: Wpng2Page;
 
   beforeEach(() => {
-    page = new UxPage();
+    page = new Wpng2Page();
   });
 
   it('should display message saying app works', () => {

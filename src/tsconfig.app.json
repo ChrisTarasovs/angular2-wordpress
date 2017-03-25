@@ -1,22 +1,22 @@
 {
+  "exclude": [ "test.ts" ], 
   "compilerOptions": {
-    "sourceMap": true,
+    "baseUrl": "",
     "declaration": false,
-    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": [
-      "es2016",
-      "dom"
-    ],
-    "outDir": "../out-tsc/app",
+    "lib": ["es6", "dom"],
+    "mapRoot": "./",
+    "module": "es6",
+    "moduleResolution": "node",
+    "outDir": "../dist/out-tsc",
+    "sourceMap": true,
     "target": "es5",
-    "module": "es2015",
-    "baseUrl": "",
-    "types": []
-  },
-  "exclude": [
-    "test.ts",
-    "**/*.spec.ts"
-  ]
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
+    
+  
+   
+  }
 }

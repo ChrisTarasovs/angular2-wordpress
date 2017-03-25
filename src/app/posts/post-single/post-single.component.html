@@ -1,0 +1,8 @@
+you are on POST 
+<div *ngIf="post">
+  <h1>{{ post.title.rendered }}</h1>
+  <div [innerHTML]="post.content.rendered"></div>
+</div>
+<div *ngIf="!post">
+  no post found
+</div>
