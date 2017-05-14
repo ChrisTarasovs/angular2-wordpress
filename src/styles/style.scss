@@ -1,0 +1,129 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+
+// Variables, Mixins
+@import "variables";
+@import "mixins";
+
+//Theme Elements
+@import "typography";
+@import "top_navigation";
+@import "buttons";
+@import "badgets_labels";
+@import "elements";
+@import "sidebar";
+
+
+@import "base";
+@import "navigation";
+@import "pages";
+@import "chat";
+@import "metismenu";
+@import "spinners";
+
+// RTL Support
+@import "rtl";
+
+
+
+// Skins
+@import "skins";
+@import "md-skin";
+
+// Media query style
+@import "media";
+
+// Custom style
+// Your custom style to override base style
+@import "custom";
+
+// Clear layout on print mode
+@media print {
+  nav.navbar-static-side {
+    display: none;
+  }
+
+  #page-wrapper {
+    margin: 0;
+  }
+}
+
+/*
+
+
+
+// For demo only - config box style
+@import "theme-config";
+
+
+
+
+
+
+
+
+.navigation{ }
+.pageNav{
+  padding: 12px 0px;
+}
+.nav-page {
+  position: fixed;
+  width: 200px;
+  float: left
+}
+.sidebarWidget{
+  background-color: #fff;
+  padding: 8px 9px;
+  margin: 10px 0px;
+}
+.currentPgNav{}
+.currentPgNav ul {
+  list-style: none;
+  padding-left: 10px; margin: 0px;
+}
+
+.currentPgNav ul li{
+      line-height: 26px;
+}
+.sidebarCat{  }
+
+.menulabel{
+    font-weight: bold;
+    line-height: 27px;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px 0px 5px 0px;
+}
+
+.content{
+    float: left;
+    margin-left: 200px;
+    width: 75%;
+    padding: 16px 0px 0px 30px;
+}
+.content h1{ 
+  font-weight: bold;
+  color: #2a2a2a; text-transform: uppercase;
+}
+.search-help{
+  width: 100%;
+  border-radius: 2%;
+  border: solid 1px;
+}
+.search-avatar{
+   width: 20%; display: inline-block;
+}
+.search-form{
+  width: 76%; display: inline-block; vertical-align: top;
+  margin-top: 20px;
+}
+.search-form input{
+  width: 100%; 
+  line-height: 22px;
+}
+.menulist ul{padding: 0px;}
+.list-group-item{ border: 0px solid #ddd;}
+
+
+*/
+
