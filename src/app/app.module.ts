@@ -33,7 +33,7 @@ import {sidebarComponent} from './sidebar-nav/sidebar-nav.component'
 import {pageNavComponent} from './page-nav/page-nav.component'
 import {contentComponent} from './content/content.component'
 import {contentPageComponent} from './content/page/page.componet'
-
+import {MainNavComponent} from './nav/nav-main.compontent'
 
 // Framework componets
 import { sideNavComponent } from './nav/sidebar.component';
@@ -77,7 +77,7 @@ type StoreType = {
    pageNavComponent,
    contentComponent,
    contentPageComponent,
-
+   MainNavComponent,
    sideNavComponent,
    headerNavComponent,
    headerTitleComponent

@@ -19,7 +19,7 @@ constructor(private _jsonp: Jsonp, private http: Http) {}
 //      .get(this._wpBase + `posts?slug=${slug}`)
 
     getPages(){
-      return this.http.get(this._uxDomain +  this._content + 'pages').map(response => response.json())
+      return this.http.get(this._uxDomain +  this._content + 'pages' + '?per_page=120').map(response => response.json())
     }
     getPage(slug){
       return this.http.get(this._uxDomain +  this._content + 'pages' + '?slug=' + slug ).map(response => response.json())
@@ -30,8 +30,8 @@ constructor(private _jsonp: Jsonp, private http: Http) {}
     getPost(slug){
       return this.http.get(this._uxDomain  +  this._content + 'posts' + '?slug=' + slug ).map(response => response.json())
     }
-    getMenu(){
-      return this.http.get(this._uxDomain  +  this._MainMenu + '2').map(response => response.json())
+    getMenu(id){
+      return this.http.get(this._uxDomain  +  this._MainMenu + id).map(response => response.json())
     }
     getCategories(){
       return this.http.get(this._uxDomain   +  this._content +  this._categories ).map(response => response.json())
